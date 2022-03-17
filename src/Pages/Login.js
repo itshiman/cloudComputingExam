@@ -105,10 +105,22 @@ function Login() {
         <>
           <div>
             <h3>You are now logged in. Your details are: </h3>
-            <div> First Name: {currentUser?.fname}</div>
-            <div> Last Name: {currentUser?.lname}</div>
-            <div> Contact : {currentUser?.contact}</div>
-            <div> Date Of Birth: {currentUser?.dob}</div>
+            <div style={{ marginTop: '5px' }}>
+              {' '}
+              First Name: {currentUser?.fname}
+            </div>
+            <div style={{ marginTop: '2px' }}>
+              {' '}
+              Last Name: {currentUser?.lname}
+            </div>
+            <div style={{ marginTop: '2px' }}>
+              {' '}
+              Contact : {currentUser?.contact}
+            </div>
+            <div style={{ marginTop: '2px' }}>
+              {' '}
+              Date Of Birth: {currentUser?.dob}
+            </div>
             <div> Get Details of other user</div>
             <div className='form'>
               <form onSubmit={getEmployee}>
@@ -139,10 +151,10 @@ function Login() {
                       <td>{employeeDetails?.lname}</td>
                       <td>{employeeDetails?.contact}</td>
                       <td>
-                        <input></input>
+                        <input placeholder='Enter Salary'></input>
                       </td>
                       <td>
-                        <input></input>
+                        <input placeholder='Enter Bonus'></input>
                       </td>
                     </tr>
                     <tr></tr>
