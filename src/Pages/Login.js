@@ -103,7 +103,7 @@ function Login() {
         </>
       ) : (
         <>
-          <div>
+          <div style={{ margin: '10px' }}>
             <h3>You are now logged in. Your details are: </h3>
             <div style={{ marginTop: '5px' }}>
               {' '}
@@ -121,7 +121,7 @@ function Login() {
               {' '}
               Date Of Birth: {currentUser?.dob}
             </div>
-            <div> Get Details of other user</div>
+            <h3 style={{ marginTop: '10px' }}> Get Details of other user</h3>
             <div className='form'>
               <form onSubmit={getEmployee}>
                 <input
@@ -142,6 +142,7 @@ function Login() {
                       <th>Contact</th>
 
                       <th>Salary</th>
+
                       <th>Bonus</th>
                     </tr>
                   </thead>
@@ -150,12 +151,8 @@ function Login() {
                       <td>{employeeDetails?.fname}</td>
                       <td>{employeeDetails?.lname}</td>
                       <td>{employeeDetails?.contact}</td>
-                      <td>
-                        <input placeholder='Enter Salary'></input>
-                      </td>
-                      <td>
-                        <input placeholder='Enter Bonus'></input>
-                      </td>
+                      <td>150000</td>
+                      <td>20000</td>
                     </tr>
                     <tr></tr>
                   </tbody>
